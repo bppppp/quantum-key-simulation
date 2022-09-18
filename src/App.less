@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* 定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: rgba(240, 240, 240, 1);
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, .5);
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);
+  background-color: rgba(240, 240, 240, .5);
+}
+.outer-layout {
+  display: flex;
+  height: 100vh;
+  flex-wrap: nowrap;
+  padding: 25px;
+}
+
+.outer-layout-left {
+  width: 12vw;
+  margin-right: 15px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  overflow: scroll;
+}
+.outer-layout-title{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+.outer-layout-left .left-button {
+  width: calc(100% - 20px);
+  height: 50px;
+  margin: 10px 10px 0px 10px;
+}
+
+.outer-layout-right {
+  flex: 1;
+  overflow: scroll;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+

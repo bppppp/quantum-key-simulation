@@ -1,0 +1,52 @@
+.quantum-to-class-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.quantum-to-class-content{
+  flex: 1;
+
+  .steps-line{
+    margin-top: 20px;
+  }
+  .quantum-to-class-operation-up{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+    .user-container{
+      display: flex;
+
+      .user-container-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 60px;
+
+        .user-describe {
+          font-size: 45px;
+          color: rgba(128,128,128,.5);
+        }
+      }
+    }
+  }
+}
+
+.quantum-to-class-operation {
+  height: 150px;
+  border-top: 1px solid rgba(128,128,128,.3);
+  display: flex;
+  flex-direction: column;
+  .quantum-to-class-operation-down{
+    height: 50px;
+    display: flex;
+    align-items:center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 50px 30px;
+  }
+}
